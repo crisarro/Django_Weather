@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Hello World</h1>
+<br/>
+
+{{api.0}}<br/><br/>
+
+Air quality: {{api.0.AQI}}<br/>
+Area: {{api.0.ReportingArea}}<br/>
+Category: {{api.0.Category.Name}}
+
+
+{% endblock %}

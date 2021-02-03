@@ -12,7 +12,7 @@
     <style>
 	.good {background-color: #00e400;}
 	.moderate {background-color: #ffff00;}
-	.unhealthyforSensitiveGroups {background-color: #ff7e00;}
+	.unhealthyforSensitive_Groups {background-color: #ff7e00;}
 	.unhealthy {background-color: #ff0000;}
 	.veryunhealthy {background-color: #99004c;}
 	.hazardous {background-color: #7e0023;}
@@ -38,9 +38,9 @@
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
       </ul>
-      <form action="{% url 'home' %}" class="d-flex" method="POST">
-	{% csrf_token %}
-        <input class="form-control me-2" type="search" placeholder="Enter ZipCode" aria-label="Search" name="zipcode">
+      <form class="d-flex">
+	  {% csrf_token %}
+        <input class="form-control me-2" type="search" placeholder="Enter ZipCode" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
